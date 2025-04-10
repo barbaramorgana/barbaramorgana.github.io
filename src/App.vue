@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import TheWelcome from './components/TheWelcome.vue'
+import ButtonLinks from '@/components/ButtonLinks.vue'
 </script>
 
 <template>
@@ -13,7 +13,10 @@ import TheWelcome from './components/TheWelcome.vue'
   </header>
 
   <main>
-    <TheWelcome />
+    <div class="wrapper">
+      <h3>Escolha seu serviço de música preferido</h3>
+      <ButtonLinks />
+    </div>
   </main>
 </template>
 
@@ -27,7 +30,7 @@ header {
   padding: 1rem;
 }
 
-header .wrapper {
+.wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
