@@ -16,38 +16,39 @@
 </template>
 
 <script setup lang="ts">
+const iconUri = (icon: string) => `${window.location.origin}${icon}`
 const platforms = [
   {
     name: 'Spotify',
     url: 'https://open.spotify.com/',
     color: '#1DB954',
-    icon: './src/components/icons/spotify.svg',
+    icon: 'icons/spotify.svg',
   },
   {
     name: 'YouTube',
     url: 'https://youtube.com/',
     color: '#FF0000',
-    icon: './src/components/icons/youtube.svg',
+    icon: 'icons/youtube.svg',
   },
   {
     name: 'YouTube Music',
     url: 'https://music.youtube.com/',
     color: '#FF0000',
-    icon: './src/components/icons/youtube-music.svg',
+    icon: 'icons/youtube-music.svg',
   },
   {
     name: 'Amazon Music',
     url: 'https://music.amazon.com/',
     color: '#232F3E',
-    icon: './src/components/icons/amazon-music.svg',
+    icon: 'icons/amazon-music.svg',
   },
   {
     name: 'Apple Music',
     url: 'https://music.apple.com/',
     color: '#FA233B',
-    icon: './src/components/icons/apple-music.svg',
+    icon: 'icons/apple-music.svg',
   },
-];
+]
 </script>
 
 <style scoped>
