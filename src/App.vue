@@ -1,14 +1,14 @@
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
 import TheWelcome from './components/TheWelcome.vue'
 </script>
 
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
-
     <div class="wrapper">
-      <HelloWorld msg="You did it!" />
+      <img alt="Main Picture" class="logo" src="./assets/main-picture.jpg" />
+
+      <h1 class="green">Bárbara Morgana</h1>
+      <h3>A música do céu no ar!</h3>
     </div>
   </header>
 
@@ -20,28 +20,28 @@ import TheWelcome from './components/TheWelcome.vue'
 <style scoped>
 header {
   line-height: 1.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+}
+
+header .wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .logo {
-  display: block;
-  margin: 0 auto 2rem;
+  max-width: 300px;
+  border-radius: 15%;
+  border: #2c3e50 3px solid;
 }
 
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
+h1 {
+  font-weight: 500;
+  font-size: 2.6rem;
 }
 </style>
