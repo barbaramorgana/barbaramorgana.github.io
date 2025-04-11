@@ -38,13 +38,17 @@ header {
 }
 
 .logo {
-  max-width: 300px;
+  max-width: 250px;
   border-radius: 15%;
-  border: #2c3e50 3px solid;
+  border: green 3px solid;
 }
 
 h1 {
   font-weight: 500;
-  font-size: 2.6rem;
+  font-size: clamp(1.5rem, 6vw, 2.6rem);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
 }
 </style>
