@@ -5,10 +5,10 @@ import ButtonLinks from '@/components/ButtonLinks.vue'
 <template>
   <header>
     <div class="wrapper">
-      <img alt="Main Picture" class="logo" src="./assets/main-picture.jpg" />
+      <img alt="Main Picture" class="logo" src="./assets/main-picture.png" />
 
-      <h1 class="green">Bárbara Morgana</h1>
-      <h3>A música do céu no ar!</h3>
+      <h1>Escandalosa Graça</h1>
+      <h3>Bárbara Morgana</h3>
     </div>
   </header>
 
@@ -22,12 +22,16 @@ import ButtonLinks from '@/components/ButtonLinks.vue'
 
 <style scoped>
 header {
-  line-height: 1.5;
+  line-height: 1.4;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   padding: 1rem;
+}
+
+header h3 {
+  color: var(--color-h3);
 }
 
 .wrapper {
@@ -40,15 +44,17 @@ header {
 .logo {
   max-width: 250px;
   border-radius: 15%;
-  border: green 3px solid;
+  border: #1f150d 3px solid;
 }
 
 h1 {
+  color: #cb835f;
   font-weight: 500;
   font-size: clamp(1.5rem, 6vw, 2.6rem);
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   max-width: 100%;
+  padding-top: 7px;
 }
 </style>
